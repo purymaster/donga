@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.answerUnderline{border:0; border-bottom:1px solid #000000;}
+.correctAnswerUnderline{position:absolute; display:none; color:#ED1C24;font-size: 14px;}
+
+.correctAnswerTooltipArrow{position:absolute; width:0; height:0; display:none;border-style:solid;}
+.correctAnswerTooltip{position:absolute; display:none;border:2px solid #a7bfef;}

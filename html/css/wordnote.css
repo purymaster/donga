@@ -1,0 +1,124 @@
+
+/* 단어장 팝업 */
+@font-face {font-family: 'gabia_solmee'; font-style: normal; font-weight: 400; src: local('※'), url('../font/gabia_solmee.woff');}
+
+.popup-wordnote{position:absolute; display:inline-block; top:0px; left:0px; width: 100%; height: 100%; }
+.popup-wordnote .popup-wrap {position:absolute; display:inline-block; top:0px; left:0px;  width: 100%; height: 100%; }
+.popup-wordnote .popup-wrap .pop-sec{position:absolute; display:inline-block; width: 100%; height: 100%; background: url('../images/common/note/bg_wordnote1.jpg') no-repeat left top; background-size: 100%; padding:168px 50px 50px 50px  }
+
+.popup-wordnote .popup-wrap .pop-sec header{ width: 483px; height: 93px;margin-left: 15px; padding: 23px 45px; }
+.popup-wordnote .popup-wrap .pop-sec header > div{ width: 100%; height: 31px; font-family: 'KoPubDotum'; font-weight: 700; font-size: 15px;  }
+.popup-wordnote .popup-wrap .pop-sec header .blank{ display: inline-block; width: 40px; }
+
+.popup-wordnote .popup-wrap .pop-sec header select{ -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: .2em .5em; width: 204px; padding-right: 30px; border: 1px solid #666666; font-family: 'KoPubDotum'; font-weight: 400; font-size: 14px; margin-left: 5px; background: url(../images/common/select_arrow.png) no-repeat 95% 50%; background-size: 11.5px 8px;   }
+.popup-wordnote .popup-wrap .pop-sec header select::-ms-expand { display: none; }
+
+.popup-wordnote .popup-wrap .pop-sec .content{ width: 483px; height: 642px; margin-left: 15px; }
+.popup-wordnote .popup-wrap .pop-sec .content .box { margin-left: 50px; margin-top: 47.5px; width: 381px; height: 280px;  padding: 20px; text-align: center; font-family: 'KoPubDotum'; font-weight: 700; font-size: 19px; color: #000000; line-height: 25px; }
+.popup-wordnote .popup-wrap .pop-sec .content .box img{ margin: 15px 0; }
+
+.popup-wordnote .popup-wrap .pop-sec .content .box .word-kor{ color: #d23b23; }
+.popup-wordnote .popup-wrap .pop-sec .content .box .word-eng{ color: #000000;  }
+.popup-wordnote .popup-wrap .pop-sec .content .box .exm-kor{  color: #000000;  }
+.popup-wordnote .popup-wrap .pop-sec .content .box .exm-eng{ color: #2aa782;  }
+
+.popup-wordnote .popup-wrap .pop-sec .content .checklist{  margin-left: 50px; margin-top: 30px; width: 381px; height: 250px; padding-left: 10px;}
+.popup-wordnote .popup-wrap .pop-sec .content .checklist ul{ margin: 0; padding: 0; }
+.popup-wordnote .popup-wrap .pop-sec .content .checklist li{ display: inline-block; width: 120px; font-family: 'KoPubDotum'; font-weight: 700; font-size: 15px; color: #333333; margin: 0; padding: 0; margin-bottom: 5px; letter-spacing: -0.5px;}
+/* .popup-wordnote .popup-wrap .pop-sec .content .checklist li.small{ width: 90px; outline:1px solid #f00;} */
+
+.popup-wordnote .popup-wrap .pop-sec > aside{ position: absolute; right:50px;top:168px; width: 188px; padding: 10px 15px; }
+.popup-wordnote .popup-wrap .pop-sec > aside .head{ width: 100%; height: 32px; line-height: 32px; font-family: 'KoPubDotum'; font-weight: 700; font-size: 15px; color: #333333; }
+.popup-wordnote .popup-wrap .pop-sec > aside .head label{ border-width: 2px; }
+.popup-wordnote .popup-wrap .pop-sec > aside .body{ width: 100%; height: 100%; padding: 10px 0; overflow: hidden; overflow-y: auto; font-family: 'KoPubDotum'; font-weight: 700; font-size: 15px; color: #333333; line-height: 31px; }
+.popup-wordnote .popup-wrap .pop-sec > aside .body ul li{ line-height: 31px; }
+
+.popup-wordnote .popup-wrap .pop-sec > .bottom-btn-block{ width: 638px; height: 56px; position: absolute; bottom: 60px; left: 65px; line-height: 56px; text-align: center; }
+
+.popup-wordnote .top-btn-block{ position: absolute;  right: 70px; top: 133px; text-align: center; }
+
+.popup-wordnote .popup-close{ position: absolute; right: 64px; top: 68px; }
+
+/* 단어 선택 후 */
+.popup-wordnote .popup-wrap .pop-detail{position:absolute; display:inline-block; width: 100%; height: 100%; background: url('../images/common/note/bg_wordnote2.jpg') no-repeat left top; background-size: 100%; padding:168px 50px 50px 50px  }
+.popup-wordnote .popup-wrap .pop-detail .content				{position:relative; display:inline-block; width: 565px; height: 425px; margin-top:55px; margin-left: 55px; }
+.popup-wordnote .popup-wrap .pop-detail .notePage				{position:absolute; display:inline-block; top:15px; right:15px;}
+.popup-wordnote .popup-wrap .pop-detail .notePage .npBtnPrev	{width:24px; height:25px; background:url('../images/common/note/npbtn_prev.png') no-repeat; background-size:100%;}
+.popup-wordnote .popup-wrap .pop-detail .notePage .npBtnNext	{width:24px; height:25px; background:url('../images/common/note/npbtn_next.png') no-repeat; background-size:100%;}
+.popup-wordnote .popup-wrap .pop-detail .notePage .npCurNum		{}
+.popup-wordnote .popup-wrap .pop-detail .notePage .npTotNum		{}
+.popup-wordnote .popup-wrap .pop-detail .box					{margin-left:0px; margin-top: 47.5px; width: 565px; height: 380px;  padding: 20px; text-align: center; font-family: 'KoPubDotum'; font-weight: 700; font-size: 23px; color: #000000; line-height: 36px;}
+.popup-wordnote .popup-wrap .pop-detail .box img				{ height:240px;}
+.popup-wordnote .popup-wrap .pop-detail .box .word-eng			{ color: #000000;  }
+.popup-wordnote .popup-wrap .pop-detail .box .word-eng span	{ cursor: pointer;  }
+.popup-wordnote .popup-wrap .pop-detail .box .word-kor			{ color: #d23b23; }
+
+.popup-wordnote .popup-wrap .pop-detail .detailBtn-wrap					{margin-top: 15px; padding-left:3px;}
+.popup-wordnote .popup-wrap .pop-detail .detailBtn-wrap .npBtnAuto		{width:130px; height:40px; background:url('../images/common/note/npbtn_play.png') no-repeat; background-size:130px auto; margin:0px 3px}
+.popup-wordnote .popup-wrap .pop-detail .detailBtn-wrap .npBtnRandom	{width:130px; height:40px; background:url('../images/common/note/npbtn_random.png') no-repeat; background-size:130px auto; margin:0px 3px}
+.popup-wordnote .popup-wrap .pop-detail .detailBtn-wrap .npBtnStop		{width:130px; height:40px; background:url('../images/common/note/npbtn_stop.png') no-repeat; background-size:130px auto; margin:0px 3px}
+.popup-wordnote .popup-wrap .pop-detail .detailBtn-wrap .npBtnReplay	{width:130px; height:40px; background:url('../images/common/note/npbtn_replay.png') no-repeat; background-size:130px auto; ; margin:0px 3px}
+
+/* 단어 게임 */
+.popup-wordnote .notegame-wrap  {position:absolute; display:inline-block; top:0px; left:0px; width: 100%; height: 100%; }
+.popup-wordnote .notegame-wrap .game-01{position:absolute; display:inline-block; width:100%; height:100%; background:url('../images/common/note/bg_game_01.jpg') no-repeat; background-size:100%;}
+.popup-wordnote .notegame-wrap .game-01 .stageBtn{margin-top:200px; margin-left:100px; width:578px; font-family: 'gabia_solmee'; font-size:30px; color:#fff;}
+.popup-wordnote .notegame-wrap .game-01 .stageBtn ul li{width:289px; float:left; margin-bottom:20px; padding-left:55px;}
+.popup-wordnote .notegame-wrap .game-01 .stageBtn ul li:nth-child(1){width:578px; margin-bottom:60px; text-align:center; padding-left:0px}
+.popup-wordnote .notegame-wrap .game-01 .stageBtn ul li label.checkbox{ display: inline-block; cursor: pointer; position: relative; width: 19px; height: 19px; background-size: 100%; border: 1px solid #808080; background:#fff; border-radius: 5px; vertical-align:3px; margin-right:5px; }
+.popup-wordnote .notegame-wrap .game-01 .stageBtn ul li label.checkbox input{ display: none; }
+.popup-wordnote .notegame-wrap .game-01 .stageBtn ul li label.checkbox .check-icon{ display: none; position: absolute; left: 50%; top: -4px; width: 17px; height: 17px; margin-left: -8px; background: url(../images/common/check_blue.png) no-repeat left top; background-size: 100%; z-index: 11; }
+.popup-wordnote .notegame-wrap .game-01 .stageBtn ul li label.checkbox input:checked + .check-icon{ display: block; }
+
+.popup-wordnote .notegame-wrap .game-01 .startbtn-wrap{display:inline-block; margin-top:70px; margin-left:223px; width:321px;}
+.popup-wordnote .notegame-wrap .game-01 .startbtn-wrap .gameTypebtn1{width:321px; height:65px; background:url('../images/common/note/btn_stat_1.png') no-repeat; background-size:auto 65px; margin:10px 0px}
+.popup-wordnote .notegame-wrap .game-01 .startbtn-wrap .gameTypebtn2{width:321px; height:65px; background:url('../images/common/note/btn_stat_2.png') no-repeat; background-size:auto 65px; margin:10px 0px}
+
+.popup-wordnote .notegame-wrap .game-02{position:absolute; display:inline-block; width:100%; height:100%; background:url('../images/common/note/bg_game_02.jpg') no-repeat; background-size:100%;}
+
+.gameTutoria	{margin-top:250px; margin-left:88px;}
+.gameTutoria li	{display:none;}
+.gameTutoria li:nth-child(1){display:inline-block}
+
+.popup-wordnote .notegame-wrap .game-02 .startbtn-wrap	{display:inline-block; margin-top:70px; margin-left:189px; width:390px}
+.popup-wordnote .notegame-wrap .game-02 .gameStart1		{width:166px; height:65px; background:url('../images/common/note/btn_game_start.png') no-repeat; background-size:166px auto}
+.popup-wordnote .notegame-wrap .game-02 .gameStart2		{width:166px; height:65px; background:url('../images/common/note/btn_game_replay.png') no-repeat; background-size:166px auto; margin-left:50px;}
+
+
+.popup-wordnote .notegame-wrap .game-03{position:absolute; display:inline-block; width:100%; height:100%; background:url('../images/common/note/bg_game_03.jpg') no-repeat; background-size:100%;}
+.popup-wordnote .notegame-wrap .game-03 .wordDrow-wrap{position:relative; display:inline-block; width:768px; height:740px;}
+.popup-wordnote .notegame-wrap .game-03 .wordDrow-wrap p{position:absolute; display:inline-block; font-family: 'gabia_solmee'; font-size:24px; color:#333;}
+
+.popup-wordnote .notegame-wrap .game-03 .gameMan{position:absolute; display:inline-block; top:630px; left:214px; width:420px; height:123px; background:url('../images/common/note/game_man.png') no-repeat; background-size:100%;
+												-webkit-animation-name:gameManShow; -webkit-animation-duration:2s; -webkit-animation-timing-function:ease-out;
+												-webkit-animation-direction:alternate; -webkit-animation-play-state:running; -webkit-animation-delay:0s; -webkit-animation-iteration-count:infinite;
+												animation-name:gameManShow; animation-duration:2s; animation-timing-function:ease-out;
+												animation-direction:alternate; animation-play-state:running; animation-delay:0s; animation-iteration-count:infinite}
+
+@-webkit-keyframes gameManShow{0%{rotation:(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg);}100%{rotation:(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg);}}
+@keyframes gameManShow{0%{rotation:(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg);}100%{rotation:(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg);}}
+
+.popup-wordnote .notegame-wrap .game-03 .gameMan .comboNum{position:absolute; display:inline-block; top:-30px; left:120px; width:34px; text-align:center; font-size:28px; font-family: 'gabia_solmee'; color:#fff; text-shadow:0px 0px 0px #333, 0px 1px 0px #333, 1px 0px 0px #333, 1px 1px 0px #333, 0px -1px 0px #333, -1px 0px 0px #333, -1px -1px 0px #333; 1px 1px 2px rgba(0,0,0,0.4);}
+
+.popup-wordnote .notegame-wrap .game-03 .gameInput-wrap{margin-top:30px; margin-left:254px;}
+.popup-wordnote .notegame-wrap .game-03 .gameInput-wrap .inputBox{display:inline-block; width:180px; height:30px; background:url('../images/common/note/game_input.png') no-repeat; background-size:100%; padding:2px; text-align:center;}
+.popup-wordnote .notegame-wrap .game-03 .gameInput-wrap .inputBox input{width:170px; text-align:center; margin-top:5px;}
+.popup-wordnote .notegame-wrap .game-03 .gameInput-wrap .gamePass{display:inline-block; width:80px; height:30px; background:url('../images/common/note/game_pass.png') no-repeat; background-size:auto 30px; margin-top:5px;}
+
+.popup-wordnote .notegame-wrap .game-03 .gmaeScore{margin-top:20px; margin-left:240px; font-family: 'gabia_solmee'; font-size:16px; color:#fff; text-shadow: 1px 1px 2px rgba(0,0,0,0.4);}
+.popup-wordnote .notegame-wrap .game-03 .gmaeScore > p{display:inline-block; width:131px; height:35px; background:url('../images/common/note/game_box.png') no-repeat; background-size:auto 35px; text-align:center; line-height:35px; margin:0px 5px}
+
+
+.popup-wordnote .notegame-wrap .game-04{position:absolute; display:inline-block; width:100%; height:100%; background:url('../images/common/note/bg_game_04.jpg') no-repeat; background-size:100%;}
+
+.popup-wordnote .notegame-wrap .game-04 .resultScore{position:relative; display:inline-block;}
+.popup-wordnote .notegame-wrap .game-04 .resultScore{margin-top:250px; margin-left:134px; width:500px; font-family: 'gabia_solmee'; font-size:65px; color:#333; text-shadow: 1px 1px 2px rgba(0,0,0,0.4); text-align:center;}
+.popup-wordnote .notegame-wrap .game-04 .resultScore > p{display:block; margin-bottom:40px;}
+
+.popup-wordnote .notegame-wrap .game-04 .result-wrap	{display:inline-block; margin-top:90px; margin-left:232px; width:303px;}
+.popup-wordnote .notegame-wrap .game-04 .result-wrap .gameReplay	{width:303px; height:65px; background:url('../images/common/note/result_btn1.png') no-repeat; background-size:303px auto;}
+.popup-wordnote .notegame-wrap .game-04 .result-wrap .gameMain		{width:303px; height:65px; background:url('../images/common/note/result_btn2.png') no-repeat; background-size:303px auto; margin:20px 0px;}
+
+
+
+.notegame-close .icon-popup-close{position:absolute; display:inline-block; top:30px; right:30px; width:35px; height: 36px; background: url('../images/common/note/notegame_close.png') no-repeat left top; background-size:100%;}

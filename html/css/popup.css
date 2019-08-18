@@ -1,0 +1,124 @@
+/* Popup */
+.popup{ position:absolute; width:768px; height:1024px; left:0; top:0; overflow:hidden; background:#fff; display:none; z-index:900; padding:50px; }
+.popup .popup-close{ position:absolute; right:50px; top:65px; }
+
+.popup-script{ background:url(../images/common/popup/bg_script.jpg) no-repeat left top; background-size:100%; display:none; }
+.popup-script .round-box{  width:100%; height:100%; border-radius:10px; background:#fff; padding:30px; }
+
+.popup-dictation{ background:url(../images/common/popup/bg_dictation.jpg) no-repeat left top; background-size:100%; display:none; }
+.popup-dictation .popup-wrap { width:100%; height:100%; padding:248px 68px  39px 68px; font-family:'KoPubDotum'; font-size:17px; }
+.popup-dictation .popup-wrap .titleQuestWrap{display:inline-block; position:absolute; left:125px; top:185px; width:482.5px; height:27px; line-height:27px; font-family:'KoPubDotum'; font-size:18px; font-weight:700; color:#333; text-align:center;}
+.popup-dictation .popup-wrap > section{ width:100%; padding:20px 30px; }
+.popup-dictation .popup-wrap > section ul{ font-family:'KoPubDotum'; font-size:17px; line-height:30px; color:#000000; }
+.popup-dictation .popup-wrap .titleQuestWrap .inter-btn-block{ position:absolute; right:-45px; top:-2px;}
+.popup-dictation .popup-wrap .btn-block{ display:inline-block; position:absolute; width:532px; height:38px; margin-top:-38px; text-align:right; }
+.popup-dictation .popup-close{ position:absolute; right:64px; top:84px; }
+
+.popup-video{ background:url(../images/common/popup/bg_video.jpg) no-repeat left top; background-size:100%; display:none; padding-top:58px; }
+.popup-video .popup-wrap > h1{ height:18px; line-height:18px;  }
+.popup-video .popup-wrap > h1.icon{ padding-left:134px; }
+.popup-video .popup-wrap > h1 > img{ position:absolute; margin-top:-10px; left:50px; }
+.popup-video .popup-wrap .pop-sec-video{ width:668.5px; height:343px;margin-top:14px; margin-bottom:28px; padding:5px; }
+.popup-video .popup-wrap .pop-sec-video .video-block{ width:658.5px; height:333px; }
+.popup-video .popup-wrap .pop-sec-01{ width:100%; height:510px; font-family:'KoPubDotum'; font-size:18px; line-height:30px; color:#000; overflow:hidden;overflow-y:auto; }
+.popup-video .round-box{ border-radius:10px; background:#fff; padding:30px; }
+.popup-video .popup-close{ position:absolute; right:50px; top:60px; }
+
+.popup-more{ background:url(../images/common/popup/bg_more.jpg) no-repeat left top; background-size:100%; display:none; }
+.popup-more .popup-wrap { width:100%; height:100%; padding:125px 68px  39px 55px; font-family:'KoPubDotum'; font-size:17px; }
+.popup-more .popup-wrap h1{ display:inline-block; width:100%; line-height:37px; font-family:'KoPubDotum'; font-size:19px; font-weight:700; color:#000000; text-align:left; border-bottom:1px solid #000;  }
+.popup-more .popup-wrap > section{ width:100%; padding:20px 0; }
+.popup-more .popup-wrap > section p{ font-family:'KoPubBatang'; font-size:18px; line-height:25px; color:#333333; text-indent:1em; font-weight:400; }
+.popup-more .popup-wrap > .pop-sec-01 p:first-child{  text-indent:0; }
+
+.popup-more .popup-wrap > .pop-sec-01{ height:345px; }
+.popup-more .popup-wrap > .pop-sec-02{ padding-top:25px;  }
+.popup-more .popup-wrap > .pop-sec-02 .block{ padding-left:32px; }
+.popup-more .popup-wrap > .pop-sec-02 .block-01{ height:82.5px; }
+.popup-more .popup-wrap > .pop-sec-02 .block h2{display:inline-block; font-size:16px; font-weight:400; font-family:'KoPubDotum'; color:#333333; margin-bottom:16px; }
+.popup-more .popup-wrap > .pop-sec-02 .block h2 .head{ display:inline-block; width:32px; margin-left:-32px; font-weight:700; }
+.popup-more .popup-wrap > .pop-sec-02 .block-01 .box > div{ display:inline-block; width:110px; font-family:'KoPubDotum'; font-weight:400; color:#333333; font-size:16px; }
+.popup-more .popup-wrap > .pop-sec-02 .block-01 .box > div em{font-family:'KoPubDotum'; font-size:17px; color:#37c6cf; font-weight:700; }
+.popup-more .popup-wrap > .pop-sec-02 .block-02 .box > input{ background:transparent; width:100%; border-bottom:1px solid #000; }
+
+.popup-more .popup-close{ position:absolute; right:68px; top:66px; }
+
+
+.popup-checkup{ background:url(../images/common/popup/bg_checkup.jpg) no-repeat left top; background-size:100%; display:none; }
+.popup-checkup .popup-wrap { width:100%; height:100%; }
+
+.popup-checkup .popup-wrap .box{ position:absolute; font-family:'KoPubDotum'; font-size:18px; font-weight:700; color:#000000; }
+.popup-checkup .popup-wrap .text-box-01{ left:249px; top:389px; width:461px; height:19px; line-height:19px; }
+.popup-checkup .popup-wrap .text-box-02{ left:249px; top:474px; width:461px; height:19px; line-height:19px;  }
+.popup-checkup .popup-wrap .text-box-02 img{ vertical-align:middle; margin-top:-2px; }
+.popup-checkup .popup-wrap .text-box-03{ left:249px; top:561px; width:461px; height:46px; line-height:23px;  }
+.popup-checkup .popup-wrap .text-box-04{ left:249px; top:866px; width:461px; height:19px; line-height:19px;  }
+.popup-checkup .popup-wrap .text-box-05{ left:400px; top:631.5px; width:461px; height:154px; line-height:45.5px;  }
+
+.popup-checkup .popup-close{ position:absolute; right:50px; top:50px; }
+
+
+.popup-test{ background:url(../images/common/popup/bg_test.jpg) no-repeat left top; background-size:100%; display:none; }
+.popup-test .popup-wrap > h1{ display:inline-block; left:49px; top:49px; width:668px; height:44px; font-family:'KoPubDotum'; font-weight:700; font-size:19px; color:#fff; line-height:44px; text-align:center; }
+.popup-test .popup-wrap { width:100%; height:100%; }
+.popup-test .popup-wrap section > h2{ font-size:16px; font-weight:700; line-height:30px; }
+.popup-test .popup-wrap section > h2 img{ vertical-align:middle; }
+
+.popup-test .popup-wrap .pop-sec-01{ width:100%; height:307px; margin-top:40px; }
+
+.popup-test .popup-wrap .pop-sec-01 .box-01{ position:absolute; margin-top:-37px; }
+.popup-test .popup-wrap .pop-sec-01 .box-02{ font-family:'KoPubDotum'; font-weight:700;   font-size:16px; color:#333333; line-height:35px; padding-left:308px; margin-top:37px; }
+.popup-test .popup-wrap .pop-sec-01 .box-02 em{ font-family:'NotoSans';  font-weight:700; margin-right:0.5em; }
+.popup-test .popup-wrap .pop-sec-01 .box-02 input{ width:103px; height:16px; line-height:16px; border-bottom:1px solid #000; background:transparent; }
+
+.popup-test .popup-wrap .pop-sec-02 .block-01{ font-family:'KoPubDotum'; font-weight:700; font-size:16px; line-height:30px; width:100%; height:150px; border:2px solid #7484c6; border-radius:10px; background:#f7f9ff; margin:12.5px 0 23px; padding:13px 23px; text-indent:1em; }
+
+.popup-test .popup-wrap .pop-sec-02 .block-02{ }
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box{ padding-left:40px; }
+.popup-test .popup-wrap .pop-sec-02 .block-02 h3{ font-family:'KoPubDotum'; font-weight:700; font-size:16px; color:#333333; margin-bottom:19px; }
+.popup-test .popup-wrap .pop-sec-02 .block-02 h3 .head{ display:inline-block; width:30px; margin-left:-40px; margin-right:10px; text-align:right; color:#000000; font-family:'NotoSans'; font-weight:700; font-size:16px;  }
+.popup-test .popup-wrap .pop-sec-02 .block-02 > div{ font-family:'KoPubDotum'; font-weight:700; color:#333333; }
+.popup-test .popup-wrap .pop-sec-02 .block-02 em{ color:#37c6cf;  }
+
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-01{ height:88px; }
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-01 input{ width:103px; height:16px; line-height:16px; border-bottom:1px solid #000; background:transparent;  }
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02 {  }
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02 > div{ width:100%; height:120px; background:url(../images/common/bg_textarea_line30.png); }
+
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02 > div > p > span{background:#fff; display:inline-block; padding-right:10px; line-height:30px; height:30px; }
+
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02 input{ width:387px; height:30px; line-height:30px; background:transparent; text-align:left; }
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02 input#L1-P025-T-2-2-1{ width:90px; }
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02  .dot{ display:inline-block;width:10px; }
+ 
+.popup-test .popup-wrap .pop-sec-02 .block-02 .box-02 textarea{ width:100%; height:90px; line-height:30px;  background:transparent; overflow:hidden; overflow-y:auto;  }
+
+.popup-test .popup-close{ position:absolute; right:64px; top:60px; }
+
+
+
+.popup-write{ background:url(../images/common/popup/bg_write.jpg) no-repeat left top; background-size:100%; display:none; }
+.popup-write .popup-wrap { width:100%; height:100%; padding:58.5px 75px; }
+
+.popup-write .popup-wrap .pop-sec-01{  }
+
+.popup-write .popup-wrap .pop-sec-01 .block{ position:absolute; width:250px; height:295px; margin-bottom:20px; left:127.5px; top:164px; }
+.popup-write .popup-wrap .pop-sec-01 .block-01{ left:127.5px; top:164px; }
+.popup-write .popup-wrap .pop-sec-01 .block-02{ left:393.5px; top:164px; }
+.popup-write .popup-wrap .pop-sec-01 .block-03{ left:127.5px; top:479.5px; }
+.popup-write .popup-wrap .pop-sec-01 .block-04{ left:393.5px; top:479.5px; }
+
+.popup-write .popup-wrap .pop-sec-01 .block .cbtn{ position:absolute; right:15px; top:15px; }
+
+.popup-write .popup-wrap .pop-sec-01 .block .painter-block{ width:247px; height:228.5px; margin-bottom:5px; padding:3px; }
+.popup-write .popup-wrap .pop-sec-01 .block .painter-block canvas{ width:100%; height:100%; background:#f2edf1;  }
+.popup-write .popup-wrap .pop-sec-01 .block .text-block textarea{ width:100%; height:60px; background:url(../images/common/bg_textarea_line30.png); line-height:30px; overflow:hidden; overflow-y:auto; }
+
+.popup-write .popup-wrap .text-box{  position:absolute; font-family:'AveriaSansLibre'; font-size:17px; line-height:18px; font-weight:400; color:#000000; }
+.popup-write .popup-wrap .text-box-01{ left:54.5px; top:950px; height:19px; line-height:19px; }
+.popup-write .popup-wrap .text-box-02{ left:237px; top:943.5px; height:19px; line-height:19px;  }
+.popup-write .popup-wrap .text-box-03{ left:400px; top:942.5px;height:46px; line-height:23px;  }
+.popup-write .popup-wrap .text-box-04{ left:543.5px; top:928.5px;  height:19px; line-height:19px;  }
+
+.popup-write .popup-close{ position:absolute; right:41px; top:30px; }
+

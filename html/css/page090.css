@@ -1,0 +1,78 @@
+/* Page 090 */
+
+#wrap { padding-left:101px; padding-top:115px; background:url(../images/page090/bg.jpg) no-repeat left top; background-size:100%;}
+
+h1.blank-title{ left:73px; top:20px; width:80px; height:80px; }
+
+#wrap section {  }
+#wrap section h1{display:inline-block; margin-bottom:0px; font-size:15px; font-weight:700; font-family:'KoPubDotum'; line-height:25px; }
+#wrap section h1 > .img{ vertical-align:top; display:inline-block; width:27px; margin-left:-27px;  }
+#wrap section h1 em{ font-family:'Arial'; font-weight:700; color:#b63e91; font-size:18px; line-height:25px; margin-right:5px; }
+
+#wrap .sec-01{position:relative; height:343px;}
+#wrap .sec-01 .block {position:absolute; left:27px; top:60px;}
+#wrap .sec-01 .block .text {font-family:'KoPubBatang'; font-size:18px; line-height:30px;}
+#wrap .sec-01 .block .text input[type=text] {background:none; border-bottom:1px solid #000; width:88px; text-align:center;}
+#wrap .sec-01 .word {position:absolute; left:7px; bottom:0; text-align:center; font-size:0; width:630px;}
+#wrap .sec-01 .word li {display:inline; line-height:37px; font-size:16px; font-weight:700; margin:0 25px;}
+
+#wrap .sec-02 {position:relative; margin-top:47px; height:188px;}
+#wrap .sec-02 .inter-btn-block {position:absolute; right:23px; top:-38px;}
+#wrap .sec-02 ul.text-block li {position:absolute; z-index:2; font-weight:700;}
+#wrap .sec-02 ul.start li:nth-child(1) {left:27px; top:65px;}
+#wrap .sec-02 ul.start li:nth-child(2) {left:232px; top:65px;}
+#wrap .sec-02 ul.start li:nth-child(3) {right:60px; top:65px;}
+#wrap .sec-02 ul.goal li:nth-child(1) {left:24px; bottom:10px;}
+#wrap .sec-02 ul.goal li:nth-child(2) {left:244px; bottom:10px;}
+#wrap .sec-02 ul.goal li:nth-child(3) {right:65px; bottom:10px;}
+
+#wrap .sec-03 h1 > .img { width:69px; margin-left:-69px; vertical-align:-7px; }
+#wrap .sec-03 .block {position:relative; height:250px;}
+#wrap .sec-03 .block .tit {position:absolute; left:255px; top:15px; font-family: 'NotoSans'; font-size:18px; font-weight:700; color:#3c5a81;}
+#wrap .sec-03 .block dl {position:absolute; left:150px; top:50px;}
+#wrap .sec-03 .block dl dt {font-family:'KoPubDotum'; font-size:16px; font-weight:700; margin-bottom:5px;}
+#wrap .sec-03 .block dl dt em {font-size:18px; color:#00a292; margin-right:8px;}
+#wrap .sec-03 .block dl dd {padding-left:38px; margin-bottom:15px;}
+#wrap .sec-03 .block dl dd input[type=text] {background:none; border-bottom:1px solid #000; width:244px;}
+#wrap .sec-03 .inter-btn-block {vertical-align:middle;}
+
+/*// Page 090 */
+
+
+/* dragLine */
+.svgContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.answerLine {
+	stroke: #00f;
+	stroke-width: 2px;
+}
+.correctLine {
+	stroke: #f00;
+	stroke-width: 2px;
+}
+.dragLineObj {
+	position: absolute;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	/*border:#000 solid 1px;*/
+	z-index: 1;
+}
+.lineDropArea {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	/*border:#000 solid 1px;*/
+}
+.dot {
+	position: absolute;
+	width:4px;
+	height:4px;
+	/* color:black;
+	background:#000; */
+}

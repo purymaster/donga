@@ -1,0 +1,208 @@
+@charset "utf-8"; 
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* /////////////////////////////////////////// 이후 ↓ 미디어컨트롤 련 css /////////////////////////////////////////// */
+
+/* 비디오 컨트롤 */
+.videoWrap						{position:relative; display:inline-block; background:#263749; padding:4px 4px 43px 4px; -moz-box-shadow:2px 2px 2px rgba(0,0,0,0.2); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.2); box-shadow:2px 2px 2px rgba(0,0,0,0.2); -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+.videoWrap .videoContainer		{}
+.videoWrap .controlsbg			{}
+
+.videoWrap .videoControls		{position:absolute; display:inline-block; width:100%; left:5px; margin:0px auto; height:38px; padding:0px 5px 0px 5px; background:url('../images/common/video/video_control_bg.png') repeat-x; background-size:auto 38px; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+
+.videoWrap video				{width:100%; height:100%; cursor:pointer;}
+.videoWrap .thumImg				{position:absolute; display:inline-block; top:0px; left:0px; width:100%; height:100%;}
+
+.videoWrap .controlsStart		{position:absolute; display:inline-block; top:4px; left:4px; width:100%; height:100%; background:url('../images/common/video/video_play_big.png') center center no-repeat; font-size:0; background-size:86px auto}
+.videoWrap .poster				{position:absolute; display:inline-block; top:0px; left:0px; width:100%; height:100%; font-size:0;}
+/* .videoWrap .controlsStart:before{position:absolute; display:inline-block; width:100%; height:100%; top:0px; left:0px; background:rgba(0,0,0,0.1); content:'';} */
+
+.videoControls .controlsTop			{font-size:0; position:relative; display:inline-block; padding-left:95px; padding-right:230px; width:100%;}
+
+.controlsPlayBar					{font-size:0; position:relative; display:inline-block; width:100%; height:4px; margin-top:17px;}
+.controlsPlayLine					{font-size:0; position:relative; display:inline-block; height:4px; width:100%; background:#ffffff; border:none; cursor:pointer; -moz-border-radius:24px; -webkit-border-radius:24px; border-radius:24px;}
+.controlsProgress					{font-size:0; position:absolute; top:0px; left:0px; height:4px; background:#263749; border:none; -moz-border-radius:24px; -webkit-border-radius:24px; border-radius:24px;}
+.controlsPlayBarBtn					{font-size:0; position:absolute; display:inline-block; top:-2px; left:0px; width:8px; height:8px; background:#21384a; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;}
+
+
+.videoControls .time				{position:absolute; display:none;} /* 사용 안함 */
+.videoControls .curtime				{color:#dadada;} /* 사용 안함 */
+.videoControls .durtime				{color:#dadada;} /* 사용 안함 */
+
+.controlsRoll01						{font-size:0; position:absolute; display:inline-block; top:-28px; left:0px; width:18px; height:32px; background:url('../images/common/video/marker_roll_01.png') no-repeat; background-size:18px auto;}
+.controlsRoll02						{font-size:0; position:absolute; display:inline-block; top:-28px; left:0px; width:18px; height:18px; background:url('../images/common/video/marker_roll_02.png') no-repeat; background-size:18px auto;}
+.controlsRoll03						{display:none;} /* 사용 안함 */
+
+.controlsSyncStart					{display:none;} /* 사용 안함 */
+.controlsSyncEnd					{display:none;} /* 사용 안함 */
+
+.videoControls .controlsLeft		{font-size:0; position:absolute; top:0px; left:0px;}
+
+.videoControls .controlsPlay		{font-size:0; float:left; display:inline-block; margin:0px; width:38px; height:38px; background:url('../images/common/video/video_play.png') 0px 0px no-repeat; background-size:38px 38px;}
+.videoControls .controlsPause		{font-size:0; float:left; display:inline-block; margin:0px; width:38px; height:38px; background:url('../images/common/video/video_pause.png') 0px 0px no-repeat; background-size:38px 38px;}
+.videoControls .controlsStop		{font-size:0; float:left; display:inline-block; margin:0px; width:38px; height:38px; background:url('../images/common/video/video_stop.png') 0px 0px no-repeat; background-size:38px 38px;}
+
+.videoControls .controlsSound		{display:none;} /* 사용 안함 */
+.videoControls .controlsSound_on	{display:none;} /* 사용 안함 */
+.SoundPlayBar						{display:none;} /* 사용 안함 */
+.SoundPlayLine						{display:none;} /* 사용 안함 */
+.SoundProgress						{display:none;} /* 사용 안함 */
+.SoundPlayBarBtn					{display:none;} /* 사용 안함 */
+
+
+.videoControls .controlsRight		{font-size:0; position:absolute; top:0px; right:0px;}
+
+/* 한줄 자막 */
+.videoControls .caption				{font-size:0; float:left; display:inline-block; margin:0px 5px; width:38px; height:38px; background:url('../images/common/video/video_script1.png') no-repeat; background-size:38px 38px;}
+.videoControls .caption_on			{font-size:0; float:left; display:inline-block; margin:0px 5px; width:38px; height:38px; background:url('../images/common/video/video_script1_on.png') no-repeat; background-size:38px 38px;}
+
+/* 두줄 자막 */
+.videoControls .btnChangeType		{font-size:0; float:left; display:inline-block; margin:0px 5px; width:38px; height:38px; background:url('../images/common/video/video_script2.png') no-repeat; background-size:38px 38px;}
+
+.videoControls .fullsize			{font-size:0; float:left; display:inline-block; margin:0px 5px; width:38px; height:38px; background:url('../images/common/video/video_big.png') no-repeat; background-size:38px 38px;}
+.videoControls .fullsize_on			{} /* 사용 안함 */
+
+
+.controlsModulSet							{font-size:0; float:left; display:inline-block;}
+
+.controlsModulSet .controlsSyncSbtn			{} /* 사용 안함 */
+.controlsModulSet .controlsSyncSbtn_on		{} /* 사용 안함 */
+
+.controlsModulSet .controlsSyncEbtn			{} /* 사용 안함 */
+.controlsModulSet .controlsSyncEbtn_on		{} /* 사용 안함 */
+
+.controlsModulSet .controlsSlow				{} /* 사용 안함 */
+.controlsModulSet .Speed					{display:none;} /* 사용 안함 */
+.controlsModulSet .controlsFast				{} /* 사용 안함 */
+
+.controlsRollbtn01							{font-size:0; float:left; display:inline-block; margin:0px; width:28px; height:38px; background:url('../images/common/video/controlsSyncSbtn.png') center center no-repeat; background-size:38px 38px;}
+.controlsRollbtn01_on						{font-size:0; float:left; display:inline-block; margin:0px; width:28px; height:38px; background:url('../images/common/video/controlsSyncSbtn_on.png') center center no-repeat; background-size:38px 38px;}
+.controlsRollbtn02							{font-size:0; float:left; display:inline-block; margin:0px; margin-right:10px; width:28px; height:38px; background:url('../images/common/video/controlsSyncEbtn.png') center center no-repeat; background-size:38px 38px;}
+.controlsRollbtn02_on						{font-size:0; float:left; display:inline-block; margin:0px; margin-right:10px; width:28px; height:38px; background:url('../images/common/video/controlsSyncEbtn_on.png') center center no-repeat; background-size:38px 38px;}
+
+.videoWrap .captionBox						{font-size:0; position:absolute; display:inline-block; width:100%; text-align:center; padding:0px 15px 0px 10px;}
+.videoWrap .captionbg						{display:inline-block; width:100%; height:100%; background:rgba(255,255,255,0.3);}
+.videoWrap .captionTxt						{position:absolute; width:100%; bottom:0px; height:26px; padding:0px; text-align:center; color:#000; font-family:'KoPubDotum'; font-size:15px; line-height:25px; margin-left:-14px;}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* 동영상 전체 화면 */
+.videoFullbg					{position:absolute; display:none; top:0px; left:0px; width:768px; height:1024px; background:url('../images/common/video/video_fullpopup_bg.jpg') no-repeat; background-size:768px 1024px; content:''; z-index:1000}
+.videoFullbg .popupContent		{position:absolute; top:70px; left:28px; text-align:left;
+								background:#263749; padding:4px 4px 4px 4px; -moz-box-shadow:2px 2px 2px rgba(0,0,0,0.2); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.2); box-shadow:2px 2px 2px rgba(0,0,0,0.2); -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+
+.videoFullbg .aloneContent		{}
+
+.videoFullbg video				{width:100%; height:100%; cursor:pointer;}
+
+.videoFullbg .videoWrap			{position:relative; display:inline-block; width:100%; background:none; padding:0px; -moz-box-shadow:2px 2px 2px rgba(0,0,0,0.0); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.0); box-shadow:2px 2px 2px rgba(0,0,0,0.0); -moz-border-radius:0px; -webkit-border-radius:0px; border-radius:0px;}
+.videoFullbg .controlsbg		{position:relative; display:none; width:688px; left:0px;}
+.videoFullbg .videoControls		{position:relative; display:inline-block; width:100%; left:0px; top:0px;}
+
+.videoFullbg .captionBox		{position:absolute; display:inline-block; width:100%; left:0px; padding-left:13px; height:460px; margin-top:60px; background:#fff; -moz-border-radius:16px; -webkit-border-radius:16px; border-radius:16px;}
+.videoFullbg .captionbg			{position:relative; display:inline-block; width:660px; background:none; opacity:1.0; overflow-y:auto; padding:10px 0px; margin:10px;}
+.videoFullbg .captionObj		{padding-bottom:5px;}
+.videoFullbg .captionTxt		{position:relative; bottom:0px; width:100%; height:auto; text-align:left; color:#333; font-family:'KoPubDotum'; font-size:16px; line-height:25px; margin-bottom:0px; white-space:pre-line; word-break:break-all; margin-left:0px;}
+.videoFullbg .captionTxt p		{color:#333; white-space:pre-line; word-break:break-all;}
+.videoFullbg .captionKor		{position:relative; display:inline-block; font-size:15px;}
+.captionTxt .txtKey				{color:#1f69a1;}
+
+.videoFullbg .controlsModulSet	{font-size:0; float:left; display:inline-block;}
+
+.videoFullbg .rollTxt			{display:none;} /* 사용 안함 */
+.iconRoll01						{position:absolute; display:inline-block; left:0px; margin-left:0px; margin-top:0px; width:22px; height:23px; background:url('../images/common/video/marker_roll_01.png') no-repeat; background-size:22px auto;}
+.iconRoll02						{position:absolute; display:inline-block; left:0px; margin-left:0px; margin-top:0px; width:22px; height:23px; background:url('../images/common/video/marker_roll_02.png') no-repeat; background-size:22px auto;}
+.iconRoll03						{display:none;} /* 사용 안함 */
+.iconRoll01_on					{position:absolute; display:inline-block; left:0px; margin-left:0px; margin-top:0px; width:22px; height:23px; background:url('../images/common/video/marker_roll_01.png') no-repeat; background-size:22px auto;}
+.iconRoll02_on					{position:absolute; display:inline-block; left:0px; margin-left:0px; margin-top:0px; width:22px; height:23px; background:url('../images/common/video/marker_roll_02.png') no-repeat; background-size:22px auto;}
+.iconRoll03_on					{display:none;} /* 사용 안함 */
+
+.videoFullbg .controlsStart		{display:none;} /* 사용 안함 */
+/*.videoFullbg .caption			{display:none;} /* 사용 안함 */
+
+.videoFullbg .videobtnClose		{display:none;} /* 사용 안함 */
+
+/*  번역 기능 버튼 */
+.btn_lang_on					{display:none;} /* 사용 안함 */
+.btn_lang_off					{display:none;} /* 사용 안함 */
+
+/* 스크롤 기능 */
+.captionScroll					{display:none;} /* 사용 안함 */
+.captionScroll .csBar			{display:none;} /* 사용 안함 */
+.captionScroll .csButton		{display:none;} /* 사용 안함 */
+
+.mediaCloseBtn						{position:absolute; display:inline-block; top:-10px; right:0px; width:41px; height:41px; background:url('../images/common/video/btn_close.png') no-repeat; background-size:41px 41px;}
+.popupAudio .mediaCloseBtn			{display:none}
+
+.hiddenMp4{position:relative; display:none;}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* 오디오 컨트롤 */
+.audioBox .audioWrap			{}
+.audioBox .audioWrap.left		{}
+.audioBox .audioWrap.center		{}
+.audioBox .audioWrap audio			{vertical-align:middle;}
+
+.popupAudio							{position:absolute; display:inline-block; width:466px; height:43px;}
+.popupAudio	.audioWrap				{position:absolute; display:inline-block; width:466px; height:43px; background:url('../images/common/video/popup_audio_bg.png') no-repeat; background-size:466px auto; z-index:100}
+.popupAudio	.audioControls			{position:relative; display:inline-block; width:100%; margin:0px auto; height:1px;}
+
+.audioControls .controlsBar			{width:100%;}
+.audioControls .controlsPlayBar		{background:transparent;}
+
+.audioControls .controlsTop			{position:relative; display:inline-block; padding-left:90px; padding-right:70px; width:100%;}
+
+.audioControls .controlsLeft		{position:absolute; top:4px; left:4px;}
+.audioControls .controlsPlay		{font-size:0; float:left; display:inline-block; margin:0px 2px; width:32px; height:32px; background:url('../images/common/video/popup_audio_play.png') 0px 0px no-repeat; background-size:32px 32px;}
+.audioControls .controlsPause		{font-size:0; float:left; display:inline-block; margin:0px 2px; width:32px; height:32px; background:url('../images/common/video/popup_audio_pause.png') 0px 0px no-repeat; background-size:32px 32px;}
+.audioControls .controlsStop		{font-size:0; float:left; display:inline-block; margin:0px 2px; width:32px; height:32px; background:url('../images/common/video/popup_audio_stop.png') 0px 0px no-repeat; background-size:32px 32px;}
+
+.audioControls .controlsPlayBar		{font-size:0; position:relative; display:inline-block; width:100%; height:7px; margin-top:15px;}
+.audioControls .controlsPlayLine	{font-size:0; position:relative; display:inline-block; height:7px; width:100%; background:#ffffff; border:none; cursor:pointer; -moz-border-radius:24px; -webkit-border-radius:24px; border-radius:24px;}
+.audioControls .controlsProgress	{font-size:0; position:absolute; top:0px; left:0px; height:7px; background:#263749; border:none; -moz-border-radius:24px; -webkit-border-radius:24px; border-radius:24px;}
+.audioControls .controlsPlayBarBtn	{font-size:0; position:absolute; display:inline-block; top:-4px; left:0px; width:15px; height:15px; background:#28d5e0; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;}
+
+.audioControls .controlsSound		{display:none;} /* 사용 안함 */
+.audioControls .controlsSound_on	{display:none;} /* 사용 안함 */
+
+.audioControls .SoundPlayBar		{display:none;} /* 사용 안함 */
+.audioControls .SoundPlayLine		{display:none;} /* 사용 안함 */
+
+
+.audioControls .controlsRight		{position:absolute; top:2px; right:10px;}
+.audioControls .controlsModulSet	{}
+
+.audioControls .caption				{font-size:0; float:left; display:inline-block; margin:0px 2px; width:32px; height:32px; background:url('../images/common/video/popup_audio_script.png') 0px 0px no-repeat; background-size:32px 32px;}
+.audioControls .caption.on			{}
+
+
+/*  자막가리기 기능 버튼 */
+.btn_script_on					{font-size:0; float:left; display:inline-block; margin:0px 5px; width:38px; height:38px; background:url('../images/common/video/video_script2.png') no-repeat; background-size:38px 38px;}
+.btn_script_off					{font-size:0; float:left; display:inline-block; margin:0px 5px; width:38px; height:38px; background:url('../images/common/video/video_script2_on.png') no-repeat; background-size:38px 38px;}
+
+/* 오디오 스크립트 창 추가 */
+.audioScriptWin						{}
+.audioScriptWin .captionBox			{position:absolute; display:inline-block; top:0px; left:0px; width:464px; height:180px; margin-top:0px; background:#fff; border:2px solid #484848; -moz-border-radius:24px; -webkit-border-radius:24px; border-radius:24px; -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.3); -webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.3); box-shadow:3px 3px 5px rgba(0,0,0,0.3);}
+
+.audioScriptWin .captionbg			{position:relative; display:inline-block; width:450px; height:120px; margin-top:45px; background:none; opacity:1.0; overflow-y:auto; padding:10px 10px 10px 20px;}
+.audioScriptWin .captionObj			{}
+.audioScriptWin .captionTxt			{position:relative; text-align:left; color:#333; font-family:'KoPubDotum'; font-size:16px; line-height:25px; white-space:pre-line; /* word-break:break-all; */}
+.audioScriptWin .captionTxt	i		{font-style:italic;}
+.audioScriptWin .captionTxt p		{}
+
+.audioScriptWin .caption_on			{font-size:0; float:left; display:inline-block; margin:0px 2px; width:32px; height:32px; background:url('../images/common/video/popup_audio_script.png') 0px 0px no-repeat; background-size:32px 32px;}
+
+/* mp3_d 보통/빠르게 버튼 */
+.btnToNormal_on						{font-size:0; float:left; display:inline-block; margin:1px 5px; width:36px; height:32px; background:url('../images/common/video/btnToNormal_on.png') no-repeat; background-size:36px 32px;}
+.btnToNormal						{font-size:0; float:left; display:inline-block; margin:1px 5px; width:36px; height:32px; background:url('../images/common/video/btnToNormal.png') no-repeat; background-size:36px 32px;}
+
+.btnToFast_on						{font-size:0; float:left; display:inline-block; margin:1px 5px; width:36px; height:32px; background:url('../images/common/video/btnToFast_on.png') no-repeat; background-size:36px 32px;}
+.btnToFast							{font-size:0; float:left; display:inline-block; margin:1px 5px; width:36px; height:32px; background:url('../images/common/video/btnToFast.png') no-repeat; background-size:36px 32px;}
+
+.btnChangeType						{font-size:0; float:right; display:inline-block; margin:0px 5px; width:20px; height:20px; background:url('../images/common/video/video_big.png') no-repeat; background-size:20px 20px;}
+
+
+/* 추가 */
+.fullVideoPopupBrit				{position:absolute; display:none; top:-35px; left:0px; width:100%; height:25px; background:url('../images/common/video/video_brit.png') no-repeat; background-size:auto 25px;
+								font-family:'KoPubDotum'; font-size:15px; line-height:33px; padding-left:130px;}
+.videoFullbg .fullVideoPopupBrit{display:inline-block}
+

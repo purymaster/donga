@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.answerMark_o{display:none;}
+.answerMark_x{display:none;}
+.checkExample .checkItem .selectAnswerMark{display:none;}
+.checkExample .checkItem .correctAnswerMark{display:none;}
+.checkExample .checkItem .checkText{cursor:pointer;}
+.checkExample .checkRadio{visibility:hidden;}

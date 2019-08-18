@@ -1,0 +1,26 @@
+/* Page 080 */
+
+#wrap{ background:url(../images/page080/bg.jpg) no-repeat 100%; background-size:100%; }
+
+h1.blank-title{ right:115px; top:60px; width:495px; height:255px; }
+
+.sec-01{ position:relative; margin-top:307px; width:334px; height:289px; }
+.sec-01 h2{ display:inline-block; height:32.5px;  }
+.sec-01 .block li{ background:url(../images/page080/bullet01.png) no-repeat 0px 11px; background-size:4px; padding-left:13px; font-size:16px; font-weight:700; font-family:'Arial'; line-height:27.5px; color:#000000; margin-bottom:12px; }
+.sec-01 .block li > span > em { color:#00a9df; }
+.sec-01 .block li > div{ font-family:'KoPubDotum'; font-weight:400; font-size:14px; color:#333333;  line-height:20px; margin-top:5px; }
+.sec-01 .block li > div em{ font-family:'AvenirNextCondensed'; font-style:italic; font-weight:400; color:#b28857; font-size:14px; }
+.sec-01 .block li > div input{ background:transparent; border-bottom:1px solid #828081; width:270px; height:23px; text-align:left; }
+
+.sec-02{ position:relative; margin-left:-390px; width:344px; height:317px; font-family:'KoPubDotum'; }
+
+.sec-02 h2{ display:inline-block; height:30.5px;  }
+
+.sec-02 .block li{ background:url(../images/page080/bullet01.png) no-repeat 0px 11px; background-size:4px; padding-left:13px; font-size:13px; font-weight:700; font-family:'KoPubDotum'; line-height:27.5px;  }
+.sec-02 .block li .line {display:block; position:relative; /* left:-13px;  */width:194px; height:1px; background:#000;}
+.sec-02 .block li > div{ margin-left:-13px; padding-top:5px;  padding-left:13px; line-height:19px; font-weight:400;}
+.sec-02 .block li > div > p{ font-size:14px; font-weight:400; }
+
+.page-bottom{ margin-left:40px; color:#583e33; font-size:12px; font-weight:700; font-family:'KoPubDotum'; }
+
+/*// Page 080 */
