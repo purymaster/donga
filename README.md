@@ -15,4 +15,4 @@
 
 ## 코딩맵
 
-[코딩맵 바로가기](https://purymaster.github.io/donag/codingmap.html)
+[코딩맵 바로가기](https://purymaster.github.io/donga/codingmap.html)
